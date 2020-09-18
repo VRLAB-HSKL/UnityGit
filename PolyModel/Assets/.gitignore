@@ -1,0 +1,4 @@
+# Meshes enthält gespeicherte Assets, ignorieren
+Meshes.meta
+
+Meshes/*
