@@ -14,7 +14,7 @@ Konventionen verwendet:
 | Methode        | Pascal Case | AsInteger      |
 | Variable       | Camel Case  | selectedColor   |
 | Klassenelement |             |                 |
-| private        | Camel Case  | forgeroundColor |
+| private        | Camel Case  | foregroundColor |
 | protected      | Camel Case  | foregroundColor |
 | public         | Pascal Case | ForegroundColor |
 
