@@ -5,6 +5,9 @@
 *~
 *.swp
 
+# Windows
+**/desktop.ini
+
 # Andere Unity Verzeichnisse
 **/Library/*
 **/obj/*
@@ -15,6 +18,7 @@
 **/Assets/MiddleVR/*
 **/Assets/Plugins
 **/Assets/MBU/*
+**/MBU.meta
 
 # Prerequisites
 *.d
