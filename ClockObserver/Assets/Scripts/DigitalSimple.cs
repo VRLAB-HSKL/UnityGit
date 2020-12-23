@@ -3,6 +3,8 @@ using VRKL.MBU;
 
 /// <summary>
 /// Eine Anzeige einer Digitaluhr mit Stunden- und Minutenangaben.
+/// 
+/// Diese Klasse verwendet die Basisklasse Observer im MBU-Package!
 /// </summary>
 public class DigitalSimple : Observer
 {
