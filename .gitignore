@@ -19,6 +19,8 @@
 **/Assets/Plugins
 **/Assets/MBU/*
 **/MBU.meta
+**/Assets/XR/*
+**/XR.meta
 
 # Prerequisites
 *.d
