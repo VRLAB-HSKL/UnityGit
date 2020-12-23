@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43967843, g: 0.48808187, b: 0.5683066, a: 1}
+  m_IndirectSpecularColor: {r: 0.43967906, g: 0.48808253, b: 0.5683076, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -507,6 +507,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -522,6 +527,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -534,16 +544,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
         type: 3}
@@ -746,6 +746,7 @@ GameObject:
   - component: {fileID: 2022296882}
   - component: {fileID: 2022296881}
   - component: {fileID: 2022296880}
+  - component: {fileID: 2022296884}
   m_Layer: 0
   m_Name: Kamera
   m_TagString: Untagged
@@ -826,3 +827,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: -120, z: 0}
+--- !u!114 &2022296884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022296879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85ee4523c7d16a34c9c9be7a03ddaac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

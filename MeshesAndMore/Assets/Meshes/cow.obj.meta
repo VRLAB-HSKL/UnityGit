@@ -1,57 +1,11 @@
 fileFormatVersion: 2
-guid: 6f7fb7526dfbf3c4f8450e387e9fd592
+guid: 791a4c4d48bf20d4a9fd9d6e9d9f908c
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: face
-    100004: hide
-    100006: hoofs
-    100008: horns
-    100010: tail
-    100012: utter
-    100014: utter_tail
-    100016: cow_root
-    400000: //RootNode
-    400002: face
-    400004: hide
-    400006: hoofs
-    400008: horns
-    400010: tail
-    400012: utter
-    400014: utter_tail
-    400016: cow_root
-    2100000: faceMat
-    2100002: hideMat
-    2100004: hoofsMat
-    2100006: hornsMat
-    2100008: tailMat
-    2100010: utterMat
-    2100012: utter_tailMat
-    2300000: face
-    2300002: hide
-    2300004: hoofs
-    2300006: horns
-    2300008: tail
-    2300010: utter
-    2300012: utter_tail
-    3300000: face
-    3300002: hide
-    3300004: hoofs
-    3300006: horns
-    3300008: tail
-    3300010: utter
-    3300012: utter_tail
-    4300000: face
-    4300002: hide
-    4300004: hoofs
-    4300006: horns
-    4300008: tail
-    4300010: utter
-    4300012: utter_tail
+  serializedVersion: 19301
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -77,38 +31,47 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.2
-    meshCompression: 3
+    globalScale: 1
+    meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
-    importBlendShapes: 0
-    importCameras: 0
-    importLights: 0
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -118,14 +81,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

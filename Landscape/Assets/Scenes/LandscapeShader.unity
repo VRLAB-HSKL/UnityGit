@@ -133,8 +133,8 @@ GameObject:
   - component: {fileID: 147997270}
   - component: {fileID: 147997268}
   - component: {fileID: 147997267}
-  - component: {fileID: 147997272}
   - component: {fileID: 147997269}
+  - component: {fileID: 147997272}
   m_Layer: 0
   m_Name: Kamera
   m_TagString: MainCamera
@@ -258,7 +258,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 1
 --- !u!154 &1359889455
 TerrainCollider:
@@ -302,7 +302,7 @@ Terrain:
   m_ScaleInLightmap: 1
   m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
   m_GroupingID: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 0
   m_AllowAutoConnect: 0
 --- !u!4 &1359889457
 Transform:
@@ -330,4 +330,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 093e99b56b0976a48b9b57c4bb03ab2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepSize: 1.06
+  stepSize: 0.5

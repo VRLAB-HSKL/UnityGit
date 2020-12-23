@@ -29,20 +29,26 @@ public class ChangePositionScript : MonoBehaviour
     [Header("Anheben und Absenken")]
     [Tooltip("Veränderung der y-Koordinate")]
     [Range(0.1f, 10.0f)]
-	public float stepSize = 3.0f;
+	public float stepSize = 0.5f;
 
     /// <summary>
     /// Mit F und G können wir die Landschaft anheben bzw. absenken.
     /// </summary>
 	void Update ()
     {
-		if(Input.GetKey(KeyCode.F) )
+		Vector3 reset = new Vector3(0.0f, 0.0f, 0.0f);
+		if (Input.GetKey(KeyCode.F) )
 		{
-			gameObject.transform.Translate( new Vector3(0.0f, stepSize, 0.0f));
+			gameObject.transform.Translate(new Vector3(0.0f, stepSize, 0.0f));
 		}
 		if(Input.GetKey(KeyCode.G))
 		{
 			gameObject.transform.Translate( new Vector3(0.0f, -stepSize, 0.0f));
+		}
+		if (Input.GetKey(KeyCode.B))
+		{
+            
+            gameObject.transform.position = reset;
 		}
 	}
 }

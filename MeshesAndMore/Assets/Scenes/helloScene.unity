@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43967843, g: 0.48808187, b: 0.5683066, a: 1}
+  m_IndirectSpecularColor: {r: 0.43967906, g: 0.48808253, b: 0.5683076, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -397,7 +397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 70.273, y: -107.79101, z: -84.965004}
 --- !u!1 &306226558
 GameObject:
@@ -507,6 +507,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -522,6 +527,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -534,16 +544,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9204733672476674245, guid: 666d20742c333c346ad21d119b2be48e,
         type: 3}

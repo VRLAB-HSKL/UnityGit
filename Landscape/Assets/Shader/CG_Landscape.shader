@@ -3,14 +3,14 @@ Shader "_Shaders/CG/Landscape" {
 	Properties 
 	{
 		// Colors you can choose later in the material
-		_MyColor0 ("Farbe0 (Unterste Schicht)", Color) = (0,0,1,1)
-		_MyColor1 ("Farbe1", Color) = (.255,.412,.882,1)
-		_MyColor2 ("Farbe2", Color) = (.529,.808,.980,1)
-		_MyColor3 ("Farbe3", Color) = (.604,.804,.196,1)
-		_MyColor4 ("Farbe4", Color) = (0,.502,0,1)
-		_MyColor5 ("Farbe5", Color) = (.957,.643,.376,1)
-		_MyColor6 ("Farbe6", Color) = (.545, .271, .075,1)
-		_MyColor7 ("Farbe7 (Oberste Schicht)", Color) = (1,1,1,1)
+		_MyColor0 ("Farbe0", Color) = (1.0, 1.0, 0.898, 1)
+		_MyColor1 ("Farbe1", Color) = (0.969, 0.988, 0.725, 1)
+		_MyColor2 ("Farbe2", Color) = (0.851, 0.941,0.639, 1)
+		_MyColor3 ("Farbe3", Color) = (0.678, 0.867, 0.557, 1)
+		_MyColor4 ("Farbe4", Color) = (0.471, 0.776, 0.475, 1)
+		_MyColor5 ("Farbe5", Color) = (0.255, 0.671, 0.365, 1)
+		_MyColor6 ("Farbe6", Color) = (0.137, 0.518, 0.263, 1)
+		_MyColor7 ("Farbe7", Color) = (0.0, 0.353, 0.196, 1)
 		
 		// the "size" of the object
 		_Size0 ("Größe", int) = 200
