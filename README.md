@@ -4,7 +4,7 @@ Beispiele für VR-Anwendungen mit Unity finden Sie im Repository VRDemos!
 
 Alle Anwendungen verwenden (Stand September 2020) die Version Unity 2019.4.10f1 LTS.
 
-In den C#-Klassen werden die folgenden, an den .NET Namenskonventionen angelehnten,
+In den C#-Klassen werden die folgenden, an die .NET Namenskonventionen angelehnte,
 Konventionen verwendet:
 
 | Kategorie      | Notation    | Beispiel        |
