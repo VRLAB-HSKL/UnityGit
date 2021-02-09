@@ -15,9 +15,10 @@ using System.Collections;
 /// erzeugt. Dort wird die Geometrie in Form eines Arrays von Eckpunkten
 /// und die Topologie als Array mit Indexeinträgen in Form einer 
 /// Eckenliste definiert.
+///
 /// Normalenvektoren werden Eckpunkten zugewiesen oder können
 /// mit Mesh::RecalculateNormals() aus den Eckpunkten und der Topologie
-/// erzeugt.
+/// erzeugt werden.
 /// 
 /// Wir stellen mit RequireComponent sicher, dass wir ein MeshFilter
 /// und MeshRenderer haben./// 
@@ -37,7 +38,7 @@ public class SimpleMesh : MonoBehaviour
     /// </summary>
     MeshFilter objMeshFilter;
     /// <summary>
-    /// Mit Hilfe einer Instanz von MehRenderer stellen wir das Dreieck dar.
+    /// Mit Hilfe einer Instanz von MeshRenderer stellen wir das Dreieck dar.
     /// </summary>
     MeshRenderer objRenderer;
 
