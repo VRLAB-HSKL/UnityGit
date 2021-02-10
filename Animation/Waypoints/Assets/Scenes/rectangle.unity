@@ -687,13 +687,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119911138}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 25.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1165456743
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,8 +802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f2853582779ac4e8152085af7b2312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2.2
-  speed: 5
 --- !u!54 &1165456749
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -832,14 +830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2c0e6fe9fe4364db0e18a79849152f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1690563124}
-  - {fileID: 1278449866}
-  - {fileID: 214123160}
-  - {fileID: 239221906}
-  - {fileID: 2091017788}
-  - {fileID: 901824032}
-  showTheWaypoints: 1
 --- !u!1 &1278449866
 GameObject:
   m_ObjectHideFlags: 0

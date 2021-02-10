@@ -10,11 +10,11 @@ Hier eine Tabelle mit den Demos und den Themen, die behandelt werden:
 
 | Demo | Behandelte Themen |
 | ---- | --------------- |
-| PolyMeshSimple | Ein Dreieck als einfache Eckenliste in C# erzeugen und darstellen |
-| PolyMesh | Erweiterung des Projekts PolyMeshSimple um mehr Punkte, wahlweise mit Flat Shading |
-| PolyModel | Eckenliste mit Ecken, die aus Unity-Objekten in der Szene erstellt wird und die interaktiv verschiebbar sind |
-| PolyNormals | Eckenliste mit selbst zugewiesenen Normalenvektoren |
-| PolyNormalsInspector | Eckenliste mit Normalenvektoren, die im Inspektor definiert werden können |
+| PolyMeshSimple | Ein Dreieck als einfache Eckenliste in C# erzeugen und darstellen. |
+| PolyMesh | Erweiterung des Projekts PolyMeshSimple um mehr Punkte, wahlweise mit Flat Shading. |
+| PolyModel | Eckenliste mit Ecken, die aus Unity-Objekten in der Szene erstellt wird und die interaktiv verschiebbar sind. |
+| PolyNormals | Eckenliste, bei der im C#-Skript auch Normalenvektoren besetzt werden.|
+| PolyNormalsInspector | Eckenliste mit Normalenvektoren, die im Inspektor definiert werden können. |
 | -------- | ---------------- | ------------------ |
 
 

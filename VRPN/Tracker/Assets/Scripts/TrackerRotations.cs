@@ -27,7 +27,7 @@ public class TrackerRotations : MonoBehaviour
     /// </summary>
     public bool tracing = false;
     /// <summary>
-    /// Wollen wir die VRPN-Ausgaben des Trackers in Update?
+    /// Wollen wir die VRPN-Ausgaben des Trackers in Update protokollieren?
     /// </summary>
     public bool logVRPN = true;
     /// <summary>
