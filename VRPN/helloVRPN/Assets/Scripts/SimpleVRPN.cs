@@ -4,58 +4,118 @@ using UnityEngine;
 using static VRPN;
 
 /// <summary>
-/// Verbindung mit VRPN aufbauen
-/// und die Werte der Maus und Tastatus 
-/// auf der Konsole ausgeben!
+/// Ein Hello World für die Verwendung eines VRPN Servers in Unity.
+/// 
+/// Wir verwenden das Plugin VRPN.
 /// </summary>
 public class SimpleVRPN : MonoBehaviour
 {
-    public string mouseDevice = "Mouse0@localhost";
-    public string keyboardDevice = "Keyboard0@localhost";
+    [Header("VRPN Server und Devices")]
+    [Tooltip("Server")]
+    /// <summary>
+    /// Hostname des VRPN-Servers
+    /// </summary>
+    public string vrpnServer = "localhost";
+    /// <summary>
+    /// Name des Trackers in der Konfiguration des VRPN-Servers
+    /// </summary>   
+    [Tooltip("Name der Maus")]
+    public string MouseDevice = "Mouse0";
+    /// <summary>
+    /// Name des Trackers in der Konfiguration des VRPN-Servers
+    /// </summary>
+    [Tooltip("Name des Keyboards")]
+    public string KeyboardDevice = "Keyboard0";
+
     /// <summary>
     /// Ausgabe der analogen Werte auf der Konsole starten und stoppen.
     /// </summary>
-    private bool printAnalogValues = false;
+    [Header("Ausgaben auf der Konsole")]
+    [Tooltip("Mauskoordinaten ausgeben (Toggle mit 'a')")]
+    public bool PrintAnalogValues = false;
     /// <summary>
     /// Ausgabe der Information über eine gedruckte Maustaste auf der Konsole starten und stoppen.
     /// </summary>
-    private bool printButtonValues = false;
+    [Tooltip("Buttons ausgeben (Toggle mit 'b')")]
+    public bool PrintButtonValues = false;
 
-    void Start()
+    /// <summary>
+    /// Variable für die VRPN-Aufrufe
+    /// 
+    /// Es gilt mouse = MouseDevice@vrpnServer.
+    /// </summary>
+    private string mouse;
+    /// <summary>
+    /// Variable für die VRPN-Aufrufe
+    /// 
+    /// Es gilt keyboard = KeyboardDevice@vrpnServer.
+    /// </summary>
+    private string keyboard;
+
+    /// <summary>
+    /// Konstanten für die Maustasten und die Taste mit der Zahl 1
+    /// </summary>
+    private const int mouseleft = 0, 
+        mousemiddle = 1, 
+        mouseright = 2,
+        keyOne = 2;
+
+    // <summary>
+    /// Konstanten für die Achsen der Maus als analoges Gerät
+    /// </summary>
+    private const int mouseX = 0, mouseY = 1;
+
+    /// <summary>
+    /// Device-Name für VRPN zusammensetzen
+    /// </summary>
+    private void Awake()
     {
-
+        // Device-Name zusammensetzen
+        mouse = MouseDevice + "@" + vrpnServer;
+        keyboard = KeyboardDevice + "@" + vrpnServer;
+        Debug.Log(">>> Awake");
+        Debug.Log("-- VRPN Devices > " + mouse);
+        Debug.Log("-- VRPN Devices > " + keyboard);
+        Debug.Log("<<< Awake");
     }
-    void Update()
+
+    /// <summary>
+    /// VRPN Geräte abfragen und, falls gewünscht,
+    /// Informationen auf der Konsole ausgeben.
+    /// </summary>
+    private void Update()
     {
         double xValue, yValue;
-        bool leftPressed = false;
-        bool middlePressed = false;
-        bool rightPressed = false;
-        bool onePressed = false;
+        bool leftPressed=false, 
+             middlePressed=false, 
+             rightPressed=false,
+             onePressed = false;
 
         // Mit der Pausetaste die Konsolenausgaben starten und stoppen
         if (Input.GetKeyUp(KeyCode.A))
         {
-            printAnalogValues = !printAnalogValues;
+            PrintAnalogValues = !PrintAnalogValues;
+            Debug.Log("Toggle für analoge Werte!");
         }
         if (Input.GetKeyUp(KeyCode.B))
         {
-            printButtonValues = !printButtonValues;
+            PrintButtonValues = !PrintButtonValues;
+            Debug.Log("Toggle für Button-Werte!");
         }
 
         // Werte abholen
-        xValue = vrpnAnalog(mouseDevice, 0);
-        yValue = vrpnAnalog(mouseDevice, 1);
+        xValue = vrpnAnalog(mouse, mouseX);
+        yValue = vrpnAnalog(mouse, mouseY);
 
-        leftPressed = vrpnButton(mouseDevice, 0);
-        middlePressed = vrpnButton(mouseDevice, 1);
-        rightPressed = vrpnButton(mouseDevice, 2);
+        leftPressed = vrpnButton(mouse, mouseleft);
+        middlePressed = vrpnButton(mouse, mousemiddle);
+        rightPressed = vrpnButton(mouse, mouseright);
 
         // Die Taste 1 hat den Scan-Code 1
-        onePressed = vrpnButton(keyboardDevice, 2);
+        onePressed = vrpnButton(keyboard, keyOne);
 
         // Werte auf der Konsole ausgeben
-        if (printButtonValues)
+        if (PrintButtonValues)
         {
             if (leftPressed)
                 Debug.Log("Linke Maustaste an Mouse0 gedrückt!");
@@ -67,12 +127,11 @@ public class SimpleVRPN : MonoBehaviour
                 Debug.Log("Die Taste 1 auf dem Keyboard gedrückt!");
         }
 
-        if (printAnalogValues)
+        if (PrintAnalogValues)
         {
             Debug.Log("Mauskoordinaten");
             Debug.Log("x:" + xValue);
             Debug.Log("y:" + yValue);
-        }
-       
+        }      
     }
 }

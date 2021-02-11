@@ -5,30 +5,38 @@ using static VRPN;
 /// <summary>
 /// Verbindung mit VRPN aufbauen
 /// und die Werte eines Trackers ausgeben.
-///
-/// Voraussetzung dieser Klasse ist, dass
-/// wir einen VRPN-Server erreichen.
 /// </summary>
+/// <remarks>
+/// Voraussetzung dieser Klasse ist, dass
+/// wir einen VRPN-Server erreichen,
+/// der einen der Dummy-Tracker (Tracker0)
+/// anbietet.
+/// </remarks>
 public class SimpleTracker : MonoBehaviour
 {
+    /// <summary>
+    /// Hostname des VRPN-Servers
+    /// </summary>
+    [Header("VRPN Server und Devices")]
+    [Tooltip("VRPN Server")]
+    public string VRPNServer = "localhost";
+    /// <summary>
+    /// Name des Trackers in der Konfiguration des VRPN-Servers
+    /// </summary>
+    [Tooltip("Name des Trackers")]
+    public string TrackerDevice = "Tracker0";
     /// <summary>
     /// Channel des Trackers
     /// 
     /// Damit legen wir fest, welchen Sensor wir abfragen.
     /// </summary>
-    public int trackerChannel = 0;
-    /// <summary>
-    /// Name des Trackers in der Konfiguration des VRPN-Servers
-    /// </summary>
-    public string trackerDevice = "Tracker0";
-    /// <summary>
-    /// Hostname des VRPN-Servers
-    /// </summary>
-    public string vrpnServer = "localhost";
+    [Tooltip("Tracker Channel")]
+    public int TrackerChannel = 0;
+
     /// <summary>
     /// Variable für die VRPN-Aufrufe
     /// 
-    /// Es gilt vrpnDevice = trackerDevice@vrpnServer.
+    /// Es gilt vrpnDevice = TrackerDevice@VRPNServer.
     /// </summary>
     private string vrpnDevice;
         
@@ -38,9 +46,9 @@ public class SimpleTracker : MonoBehaviour
     private void Awake()
     {
         // Device-Name zusammensetzen
-        vrpnDevice = trackerDevice + "@" + vrpnServer;
+        vrpnDevice = TrackerDevice + "@" + VRPNServer;
         Debug.Log(">>> Awake");
-        Debug.Log("-- Awake: > " + vrpnDevice);
+        Debug.Log("-- Fracker-Device und Server > " + vrpnDevice);
         Debug.Log("<<< Awake");
     }
 
@@ -53,19 +61,12 @@ public class SimpleTracker : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        Vector3 trackerPos = vrpnTrackerPos(vrpnDevice, trackerChannel);
-        Quaternion trackerQuat = vrpnTrackerQuat(vrpnDevice, trackerChannel);
-        Vector3 euler = trackerQuat.eulerAngles;
-        float angle = 0.0f;
-        Vector3 axis = Vector3.zero;
-        trackerQuat.ToAngleAxis(out angle,out axis);
+        Vector3 trackerPos = vrpnTrackerPos(vrpnDevice, TrackerChannel);
+        Quaternion trackerQuat = vrpnTrackerQuat(vrpnDevice, TrackerChannel);
 
         Debug.Log(">>> Update");
         Debug.Log("-- Update: > Trackerposition > " + trackerPos);
         Debug.Log("-- Update: > Tracker Quaternion > " + trackerQuat.ToString());
-        Debug.Log("-- Update: > Tracker Quaternion Eulerwinkel > " + euler.ToString());
-        Debug.Log("-- Update: > Tracker Quaternion Drehwinkel > " + angle);
-        Debug.Log("-- Update: > Tracker Quaternion Drehachse > " + axis.ToString());
         Debug.Log("<<< Update");
     }
 }
