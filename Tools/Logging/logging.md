@@ -169,22 +169,21 @@ die verwendeten Appender und auch die in der Hierarchie verfügbaren Logger:
     <layout type="log4net.Layout.PatternLayout">
       <conversionPattern value="%timestamp %level %class: %message%newline" />
     </layout>
-  </appender>
+   </appender>
   
-  <logger name="PlayerControl">
+   <logger name="PlayerControl">
     <level value="DEBUG"/>
-  </logger>
+   </logger>
 
-
-  <logger name="MoveTowards">
+   <logger name="MoveTowards">
     <level value="INFO"/>
-  </logger>
+   </logger>
   
-  <root>
+   <root>
     <level value="FATAL"/>
     <appender-ref ref="UnityConsoleAppender"/>
-  </root>
-  </log4net>
+   </root>
+   </log4net>
 
 Hier erkennen wir die Konfigurationen von Appendern. Dabei gehen wir davon aus, dass es im Projekt einer Klasse __UnityConsoleAppender__ gibt.
 Im Projekt finden Sie diese Klasse im Verzeichnis *LoggingScripts*. Diese Klasse verwendet die Unity-Klasse 'Debug' und erzeugt Ausgaben
