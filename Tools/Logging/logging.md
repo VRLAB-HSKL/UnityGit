@@ -1,5 +1,12 @@
 # Logging
 
+## Quellen
+Diese Darstellung und die Software ist eine Weiterentwicklung der folgenden Dokumente:
+
+1. Manfred Brill: __Logging__, Vorlesungsimteröagem *Software Management Grundlagen*, Studiengang IT-Analyst, Wintersemester 2020/21
+2. Simon Nägele: __Logging in Unity__, Projektarbeit in der Lehrveranstaltung *Augmented und Virtual Reality*, Wintersemester 2020/21
+
+
 ## Anforderungen
 In vielen Software-Produkten macht es sinn während der Laufzeit Informationen zu protokollieren.
 Das kennen wir insbesondere von httpd-Servern oder anderen im Hintergrund laufenden Software-Paketen.
