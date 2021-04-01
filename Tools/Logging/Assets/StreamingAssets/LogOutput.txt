@@ -1684,4 +1684,608 @@
 
 2366 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, -10.0)
 
-2386 INFO PlayerControl: Neue Po
+2386 INFO PlayerControl: Neue Po1361 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1368 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1651 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1653 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1655 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1657 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1659 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1661 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1663 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1664 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1666 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1668 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1670 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1672 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1673 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1678 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1699 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1701 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1710 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1730 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1749 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1769 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1789 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1809 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1828 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1849 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1868 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1888 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1908 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1928 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1949 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1968 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1989 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2008 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2029 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2049 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2068 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2089 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2108 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2129 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2148 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2168 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2189 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2209 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2228 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2248 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2269 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2291 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2308 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2329 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2349 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2369 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2389 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2408 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2428 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2448 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2468 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2488 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2509 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2529 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2549 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2568 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2588 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2608 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2629 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2648 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2669 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2688 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2709 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2728 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2748 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2769 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2789 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2809 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2829 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2847 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2868 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2888 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2909 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2928 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2948 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2968 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+2988 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3009 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3028 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3048 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3068 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3088 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3108 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3128 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3148 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3168 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3189 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3208 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3229 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3249 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3268 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3289 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3309 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3328 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3348 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3368 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3388 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3408 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3428 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3448 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3469 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3488 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3509 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3528 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3548 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3568 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3589 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3608 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3628 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3648 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3668 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3688 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3709 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3729 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3749 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3769 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3788 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3809 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3829 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3852 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3869 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3889 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3909 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3928 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3948 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3968 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+3988 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4008 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4028 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4049 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4069 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4089 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4109 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4128 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4149 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4169 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4188 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4209 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4229 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4254 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4268 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4289 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4312 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4328 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4348 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4368 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4388 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4408 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4428 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4449 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4468 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4488 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4509 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4528 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4548 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4568 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4589 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4609 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4628 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4648 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4669 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4689 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4709 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4729 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4749 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4768 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4788 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4808 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4828 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4848 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4869 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4889 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4908 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4928 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4948 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4969 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+4988 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5008 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5028 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5049 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5068 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5088 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5108 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5128 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5149 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5169 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5188 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5209 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5229 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5249 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5270 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5289 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5309 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5328 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5349 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5369 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5389 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5408 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5428 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5448 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5468 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5488 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5509 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5529 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5549 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5568 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5588 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5609 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5628 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5648 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5669 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5689 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5708 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5729 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5749 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5769 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5788 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5808 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5830 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5848 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5868 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5889 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5908 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5928 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5948 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5969 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+5989 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6009 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6029 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6049 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6069 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6089 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6109 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6129 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6148 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6168 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6188 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6209 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6228 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6249 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6268 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6289 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6308 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6328 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6349 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6369 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6389 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6409 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6429 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6449 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6469 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6488 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6509 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+6528 INFO PlayerControl: Neue Position des 959 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+965 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1296 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1298 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1300 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1302 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1303 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1305 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1307 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1309 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1311 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1313 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1314 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1316 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1318 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1320 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1322 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1324 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1335 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1337 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1346 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1365 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1386 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1406 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1426 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1446 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1466 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1486 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1506 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1526 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1546 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1565 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1585 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1605 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1625 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1645 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1666 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1686 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1705 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1725 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1745 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1765 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1786 INFO PlayerControl: Neue Position des Players: (0.0, 0.5, 0.0)
+
+1806 INFO PlayerContr

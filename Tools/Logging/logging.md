@@ -7,6 +7,11 @@ Diese Darstellung und die Software ist eine Weiterentwicklung der folgenden Doku
 2. Simon Nägele: __Logging in Unity__, Projektarbeit in der Lehrveranstaltung *Augmented und Virtual Reality*, Wintersemester 2020/21
 
 
+## Verwendung in Projekten
+Für die Verwendung in weiteren Projekten wurde im Verzeichnis Builds/Exports ein Package exportiert, das
+die Appender, die Konfiguration und die log4net.dll enthält. Dieses Package wird als Release in
+GitHub verfügbar gemacht.
+
 ## Anforderungen
 In vielen Software-Produkten macht es sinn während der Laufzeit Informationen zu protokollieren.
 Das kennen wir insbesondere von httpd-Servern oder anderen im Hintergrund laufenden Software-Paketen.
