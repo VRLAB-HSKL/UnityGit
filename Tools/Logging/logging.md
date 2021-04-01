@@ -154,8 +154,7 @@ aus, den wir der Log-Funktion übergeben haben.
 Diese konfiguration können wir auch in einer XML-Datei durchführen. Dabei konfigurieren wir
 die verwendeten Appender und auch die in der Hierarchie verfügbaren Logger:
 
-    <log4net>
-  
+    <log4net> 
     <!--CustomAppender-->
     <appender name="UnityConsoleAppender" type="UnityConsoleAppender">
     <stringProperty name="MyProperty"></stringProperty>
@@ -185,7 +184,6 @@ die verwendeten Appender und auch die in der Hierarchie verfügbaren Logger:
     <level value="FATAL"/>
     <appender-ref ref="UnityConsoleAppender"/>
   </root>
-  
   </log4net>
 
 Hier erkennen wir die Konfigurationen von Appendern. Dabei gehen wir davon aus, dass es im Projekt einer Klasse __UnityConsoleAppender__ gibt.
