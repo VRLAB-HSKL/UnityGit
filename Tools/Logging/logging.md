@@ -154,37 +154,40 @@ aus, den wir der Log-Funktion übergeben haben.
 Diese konfiguration können wir auch in einer XML-Datei durchführen. Dabei konfigurieren wir
 die verwendeten Appender und auch die in der Hierarchie verfügbaren Logger:
 
-    <log4net> 
-    <!--CustomAppender-->
-    <appender name="UnityConsoleAppender" type="UnityConsoleAppender">
-    <stringProperty name="MyProperty"></stringProperty>
-    <layout type="log4net.Layout.PatternLayout,log4net">
-      <param name="ConversionPattern" value="%timestamp %level %class: %message%newline"/>
-    </layout>
-    </appender>
-    <!-- Log4net interne appender-->
-    <appender name="FileAppender" type="log4net.Appender.FileAppender">
-    <file value=".\Logs\loggingExample.txt" />
-    <appendToFile value="true" />
-    <layout type="log4net.Layout.PatternLayout">
-      <conversionPattern value="%timestamp %level %class: %message%newline" />
-    </layout>
-   </appender>
-  
-   <logger name="PlayerControl">
-    <level value="DEBUG"/>
-   </logger>
-
-   <logger name="MoveTowards">
-    <level value="INFO"/>
-   </logger>
-  
-   <root>
-    <level value="FATAL"/>
-    <appender-ref ref="UnityConsoleAppender"/>
-   </root>
-   </log4net>
-
+     <log4net> 
+       
+        <!--CustomAppender-->
+       <appender name="UnityConsoleAppender" type="UnityConsoleAppender">
+         <stringProperty name="MyProperty"></stringProperty>
+         <layout type="log4net.Layout.PatternLayout,log4net">
+            <param name="ConversionPattern" value="%timestamp %level %class: %message%newline"/>
+         </layout>
+      </appender>
+      
+      <!-- Log4net interne appender-->
+      <appender name="FileAppender" type="log4net.Appender.FileAppender">
+         <file value=".\Logs\loggingExample.txt" />
+         <appendToFile value="true" />
+         <layout type="log4net.Layout.PatternLayout">
+           <conversionPattern value="%timestamp %level %class: %message%newline" />
+         </layout>
+      </appender>
+     
+     <logger name="PlayerControl">
+        <level value="DEBUG"/>
+     </logger>
+    
+    <logger name="MoveTowards">
+       <level value="INFO"/>
+    </logger>
+    
+    <root>
+       <level value="FATAL"/>
+       <appender-ref ref="UnityConsoleAppender"/>
+    </root>
+   
+    </log4net>
+    
 Hier erkennen wir die Konfigurationen von Appendern. Dabei gehen wir davon aus, dass es im Projekt einer Klasse __UnityConsoleAppender__ gibt.
 Im Projekt finden Sie diese Klasse im Verzeichnis *LoggingScripts*. Diese Klasse verwendet die Unity-Klasse 'Debug' und erzeugt Ausgaben
 auf der Unity-Konsole.
