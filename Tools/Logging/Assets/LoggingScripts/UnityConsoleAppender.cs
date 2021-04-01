@@ -5,6 +5,7 @@ using log4net.Core;
 /// <summary> 
 /// Appender für die Unity Console.
 /// Je nach Level des Logging-Outputs werden verschiedene Funktionen der Unity-Klasse Debug verwendet.
+/// 
 /// Quelle: https://stackoverflow.com/questions/23796412/how-to-use-use-log4net-with-unity/
 /// </summary>
 public class UnityConsoleAppender : AppenderSkeleton
@@ -13,7 +14,7 @@ public class UnityConsoleAppender : AppenderSkeleton
     protected override void Append(LoggingEvent loggingEvent)
     {
         var properties = loggingEvent.Properties;
-        properties["MyProperty"] = "I_am_a_CustomProperty";
+        properties["MyProperty"] = "Custom";
         string message = RenderLoggingEvent(loggingEvent);
 
 
@@ -33,12 +34,6 @@ public class UnityConsoleAppender : AppenderSkeleton
             Debug.Log(message);
         }
 
-        AddStringProperty("CustomProperty");
-    }
-
-    public void AddStringProperty(string value)
-    {
-        // do whatever has to be done
-
+        //AddStringProperty("CustomProperty");
     }
 }

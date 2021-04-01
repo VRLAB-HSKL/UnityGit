@@ -39,7 +39,7 @@ public class MoveTowards : MonoBehaviour
     private void Start()
     {
         Log.Debug(">>> Start");
-        Log.Info("Info-Ausgabe");
+        Log.Info("Info-Ausgabe in Start");
         Log.Debug("<<< Start");
     }
 

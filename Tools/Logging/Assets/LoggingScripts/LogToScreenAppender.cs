@@ -4,7 +4,9 @@ using log4net.Core;
 using System.Collections;
 using UnityEngine.UI;
 
-
+/// <summary>
+/// Loger-Output in die Text-Komponente eines Game-objects im Projekt
+/// </summary>
 public class LogToScreenAppender : AppenderSkeleton
 {
 
@@ -37,6 +39,4 @@ public class LogToScreenAppender : AppenderSkeleton
         logText.text = log;
         
     }
-
-
 }
