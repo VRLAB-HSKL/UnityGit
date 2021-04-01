@@ -196,7 +196,5 @@ mit dem `root`-Tag. Hier stellen wir ein, dass außerhalb der beiden Klassen all
 dass wir den __UnityConsoleAppender__ einsetzen.
 
 
-## Appender
-Im Projekt finden wir Konfigr
 ![Lizenzlogo](https://licensebuttons.net/l/by-nc-sa/3.0/de/88x31.png)
 
