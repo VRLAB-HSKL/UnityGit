@@ -80,11 +80,12 @@ dann erscheinen die Ausgabe aus dieser Klasse nicht in der Logging-Ausgabe. Die 
 
 ## log4net in einem Unity-Projekt
 Um *log4net* in einem Unity-Projekt zu verwenden fügen wir die dll-Datei *log4net.dll* dem Projekt hinzu. Dazu kopieren wir
-diese Datei in das Verzeichnis __Assets/Plugins__. Es gibt auch XML-Dateien für die Konfiguration des Loggings von außen.
+diese Datei in das Verzeichnis __Assets/Plugins__. Wir verwenden eine XML-Datei für die Konfiguration des Loggings von außen.
 Beispiele für diese konfigurations-Dateien finden wir in diesem Projekt.
-Die Datei __log4net.xml__ kopieren wir in das Verzeichnis __Assets__. In das Verzeichnis __Assets/Resources__
+In das Verzeichnis __Assets/Resources__
 kopieren wir die Datei __Log4NetConfig.xml__.
-
+Dass diese Datei verwendet wird legen wir in der Klasse __LoggingConfiguration__ fest. Der Datennamen kann in dieser Klasse
+verändert werden wenn dies notwendig ist.
 
 ## Logging-Ausgaben
 Einer Klasse in der wir Logging-Ausgabe hinzufügen möchten fügen wir mit `using log4net;` die nötigen Deklarationen hinzu.
@@ -131,7 +132,7 @@ insbesondere sogenannte __FileAppender__, mit denen wir in eine ASCII-Datei ausg
 Konsolen-Ausgaben nutzen in einem  Unity-Projekts nichts, dort geben wir auf die Unity-Konsole aus.
 Aber die __FileAppender__ sind wie wir sehen werden von großem Nutzen.
 
-Dar+ber hinaus können wir eigene __Appender__ implementieren, in den wir beispielsweise mit Hilfe
+Darüber hinaus können wir eigene __Appender__ implementieren, in den wir beispielsweise mit Hilfe
 der Unity-Klasse `Debug`Ausgaben auf der Unity-Konsole erzeugen können. Oder wir implementieren eigene
 __FileAppender__.
 
@@ -199,11 +200,24 @@ Hier erkennen wir die Konfigurationen von Appendern. Dabei gehen wir davon aus, 
 Im Projekt finden Sie diese Klasse im Verzeichnis *LoggingScripts*. Diese Klasse verwendet die Unity-Klasse 'Debug' und erzeugt Ausgaben
 auf der Unity-Konsole.
 
+Die folgenden Appender sind in diesem Projekt implementiert:
+1. UnityDebugAppender: Ausgaben mit Debug.Log, nur diese Funktion wird verwendet.
+2. UnityConsoleAppender: Ausgaben je nach Log-Level mit verschiedenen  Funktionen der Klasse Debug.
+3. Log4NetExceptionDemo: Beispiel für die Verwendung von Exceptions und log4net
+4. AssetsAppender: Ausgabe in eine Datei, die im StreamingAssets-Verzeichnis liegt.
+
+Die Konfiguration verwendet für den __FileAppender__ aus *log4net* eine absoluten Pfad, der in der XML-Datei verändert werden kann.
+Diese Einstellung hat den Vorteil, dass die Log-Ausgaben auf jeden Fall gefunden werden können.
+
 In zwei Klassen im Projekt, in `PlayerControl' und in ' MoveTowards' sind __ILog__-Instanzen erzeugt worden. Wir können die zu verwendende
 Stufe so extern verändern und damit die Ausgaben steuern. Alle weiteren Einstellungen erfolgen in der Sektion
 mit dem `root`-Tag. Hier stellen wir ein, dass außerhalb der beiden Klassen alle anderen Logger die Stufe `FATAL` verwenden und
 dass wir den __UnityConsoleAppender__ einsetzen.
 
+## log4net in Builds
+Bei einem externen Build müssen aktuell die dll und auch die xml-Konfiguration manuell in das Verzeichnis *Logging_Data/Resources
+kopiert werden. Wird der __AssetsAppender__ verwendet wird das Verzeichnis __StreamingAssets__ aus dem Projektverzeichnis in das Build kopiert,
+inklusive dem dort bereits vorhandenen Log-File.
 
 ![Lizenzlogo](https://licensebuttons.net/l/by-nc-sa/3.0/de/88x31.png)
 
