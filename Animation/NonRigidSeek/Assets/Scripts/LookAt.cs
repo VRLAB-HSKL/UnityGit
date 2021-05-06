@@ -2,16 +2,11 @@
 
 /// <summary>
 /// Ein Objekt, dem diese Klasse hinzugefügt wird 
-/// verfolgt ein Zielobjekt mit Hilfe von einfacher Physik.der Funktion
-/// 
-/// 
-/// Ein GameObject, das diese Klasse verwenden soll
-/// muss eine Rigidbody Component besitzen.
-/// Dies wird nmit Hilfe von RequireComponent sichergestellt.
+/// verfolgt ein Zielobjekt mit Hilfe von 
+/// Transform.MoveTowards und Transform.LookAt.
 /// </summary>
 /// 
-[RequireComponent(typeof(Rigidbody))]
-public class MoveTowards : MonoBehaviour
+public class LookAt : MonoBehaviour
 {
     /// <summary>
     /// Position und Orientierung des verfolgten Objekts
@@ -22,6 +17,7 @@ public class MoveTowards : MonoBehaviour
     /// Geschwindigkeit des Objekts
     /// </summary>
     [Tooltip("Geschwindigkeit")]
+    [Range(1.0F, 20.0F)]
     public float speed = 10.0F;
     /// <summary>
     /// Soll der Vektor zwischen Ziel und dem aktuellen Objekt angezeigt werden?
@@ -30,12 +26,12 @@ public class MoveTowards : MonoBehaviour
 	public bool showRay = false;
 
     /// <summary>
-    /// Bewegung in FixedUpdate (Time.deltaTime!)
+    /// Bewegung in LateUpdate
     /// 
     /// Erster Schritt: Keyboard abfragen und bewegen.
-    /// Zweiter Schritt: überprüfen, ob wir im zulässigen Bereich sind.
+    /// Zweiter Schritt: Überprüfen, ob wir im zulässigen Bereich sind.
     /// </summary>
-    private void FixedUpdate ()
+    private void LateUpdate ()
     {
         // Schrittweite
 		float stepSize = speed * Time.deltaTime;
@@ -45,8 +41,14 @@ public class MoveTowards : MonoBehaviour
 
         // Neue Position berechnen
 		transform.position = Vector3.MoveTowards(source, target, stepSize);
+        // Orientieren mit LookAt - wir "schauen" auf das verfolgte Objekt
         transform.LookAt(playerTransform);
+
         if (showRay)
-			Debug.DrawRay(transform.position, 100.0f * transform.forward, Color.red);
+        {
+            // Länge des Strahls: die halbe Distanz zwischen verfolgtem Objekt und Verfolger
+            float dist = 0.5F * Vector3.Distance(playerTransform.position, source);
+            Debug.DrawRay(transform.position, dist * transform.TransformDirection(Vector3.forward), Color.red);
+        }
 	}
 }
