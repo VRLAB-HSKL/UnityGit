@@ -54,7 +54,7 @@ public class SeekTarget : MonoBehaviour
     {
         rbComp = GetComponent(typeof(Rigidbody)) as Rigidbody;
         if (rbComp == null)
-          Debug.LogError("Der Seeker hat keine RigidBody Component!");
+          Debug.LogError("Der Seeker hat keine RigidBody-Component!");
     }
 
     /// <summary>
@@ -70,7 +70,7 @@ public class SeekTarget : MonoBehaviour
 		Vector3 target = player.transform.position;
 
 		Vector3 seekVelocity = Seek(source, target, acceleration * Time.deltaTime, MAX_ACCELERATION * Time.deltaTime);
-        Debug.Log("Geschwindigkeitsvektor" + seekVelocity);
+        //Debug.Log("Geschwindigkeitsvektor" + seekVelocity);
         // Kraftvektor zur Rigidbody-Component des Ziels hinzufügen
         // und damit das Ziel steuern.
         rbComp.AddForce(seekVelocity, ForceMode.VelocityChange);

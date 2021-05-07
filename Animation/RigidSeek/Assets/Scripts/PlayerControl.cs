@@ -1,70 +1,70 @@
 using UnityEngine;
 
 /// <summary>
-/// Bewegung eines GameObjects mit Hilfe der Cursortasten 
-/// innerhalb eines Rechecks in x und z-Koordinaten. Die y-Koordinate 
-/// des bewegten Objekts wird abgefragt und nicht verändert.
+/// Bewegen eines Objekts mit den Cursortasten und
+/// daraus erstellten Geschwindigkeitsvektoren
 /// </summary>
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour
 {
     /// <summary>
-    /// Grenzen in x und z
+    /// Maximaler Betrag der Geschwindigkeit
     /// </summary>
-	public const float MIN_X = -15,
-	                   MAX_X = 15,
-	                   MIN_Z = -10,
-	                   MAX_Z = 10;
+    [Tooltip("Maximale Schrittweite")]
+    [Range(1.0f, 1000.0f)]
+    public const float MAX_MOVE_DISTANCE = 500.0f;
     /// <summary>
-    /// y-Koordinate des bewegten Ojekts. Wird in Awake abgefragt.
+    /// y-Koordinate des Objekts, die konstant gelassen wird
     /// </summary>
-    private float y;
+	private float y;
     /// <summary>
-    /// Geschwindigkeit der Bewegung
+    /// Rigidbody-Komponente des Objekts
     /// </summary>
-	private float speed = 20.0F;
-
-    /// Initialisierung
-    /// 
-    /// Wir fragen die y-Koordinate des GameObjects ab,
-    /// die von uns nicht verändert wird.
-    /// Wir benötigen diesen Wert für die Translationsmatrix,
-    /// mit der wir die Bewegung durchführen.
-    private void Awake()
+    private Rigidbody rbComponent;
+    /// <summary>
+    /// Geschwindigkeit
+    /// </summary>
+	private float m_speed = 20.0f;
+    /// <summary>
+    /// Richtung des Objekts
+    /// </summary>
+	private Vector3 moveDirection;
+	
+    /// <summary>
+    /// Vor allen Start-Funktionen
+    /// </summary>
+	private void Awake()
     {
 		y = transform.position.y;
-	}
+		moveDirection = Vector3.zero;
+        rbComponent = GetComponent(typeof(Rigidbody)) as Rigidbody;
+        if (rbComponent == null)
+            Debug.LogError("Das verfolgte Objekt hat keine RigidBody-Component!");
+        Debug.Log("Sie finden Details über die Physik im Inspektor unter Info!");
+    }
 
     /// <summary>
-    /// Bewegung und Verfolgung durchführen
-    /// 
-    /// Erster Schritt: Keyboard abfragen und bewegen.
-    /// Zweiter Schritt: überprüfen, ob wir im zulässigen Bereich sind.
+    /// Physik-Berechnungen führen wir in FixedUpdate aus,
+    /// das in äquidistanten Zeitintervallen aufgerufen wird.
     /// </summary>
-    private void Update ()
+	private void FixedUpdate ()
     {
 		KeyboardMovement();
-		CheckBounds();
 	}
 	
     /// <summary>
-    /// Abfragen der Achsen Horizontal und Vertical (das sind zum Beispiel
-    /// die Cursortasten in Unity) und Translation an Hand dieser Eingaben.
+    /// Abfragen der beiden Achsen (als Default die Cursortasten)
+    /// und Berechnung des Geschwindigkeitsvektors für die Bewegung.
     /// </summary>
-	private void KeyboardMovement(){
-		float dx = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-		float dz = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-		transform.Translate( new Vector3(dx,y,dz) );		
-	}
-	
-    /// <summary>
-    /// Überprüfen, ob die Grenzen eingehalten werden.
-    /// </summary>
-	private void CheckBounds(){
-		float x = transform.position.x;
-		float z = transform.position.z;
-		x = Mathf.Clamp(x, MIN_X, MAX_X);
-		z = Mathf.Clamp(z, MIN_Z, MAX_Z);
-		
-		transform.position = new Vector3(x, y, z);
+	private void KeyboardMovement()
+    {
+		float dx = Input.GetAxis("Horizontal") * m_speed * Time.deltaTime;
+		float dz = Input.GetAxis("Vertical") * m_speed * Time.deltaTime;
+		moveDirection = new Vector3 (dx, y, dz);
+
+		float moveDistance = MAX_MOVE_DISTANCE * Time.deltaTime;
+		moveDirection = Vector3.ClampMagnitude(moveDirection, moveDistance);
+
+		rbComponent.AddForce(moveDirection, ForceMode.VelocityChange);
 	}
 }
