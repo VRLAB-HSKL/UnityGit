@@ -7,11 +7,11 @@ Hier eine Tabelle mit den Demos und den Themen, die behandelt werden:
 | Demo | Themen |
 | ---- | --------------- |
 | MoveObject | Bewegen eines Objekts mit Hilfe von Tastatureingaben |
-| Transforms | Bewegen eines objekts auf einer Kreisbahn |
-| Waypoints | Bewegen eines Objekts mit Hilfe von Wegpunkten |
 | NonRigidSeek | Bewegen eines Objekts durch Verfolgen eines Zielobjekts ohne Physik |
 | RigidSeek | Bewegen eines Objekts durch Verfolgen eines Zielobjekts mit Physik |
 | MoreSeekers | Fortsetzung von RigidSeek, mehrere Verfolger |
+| Transforms | Bewegen eines objekts auf einer Kreisbahn |
+| Waypoints | Bewegen eines Objekts mit Hilfe von Wegpunkten |
 | -------- | ---------------- | ------------------ |
 
 
