@@ -1,8 +1,11 @@
 # Desktop und mobile Anwendungen mit Unity
-Hier finden Sie Aufgaben und Lösungen für Unity-Anwendungen für den Desktop und Android. 
+Hier finden Sie Beispiele von Unity-Anwendungen für den Desktop und Android. 
 Beispiele für VR-Anwendungen mit Unity finden Sie im Repository VRDemos!
 
-Alle Anwendungen verwenden (Stand September 2020) die Version Unity 2019.4.10f1 LTS.
+Alle Anwendungen wurden mit der Version Unity 2010.3.7f1 LTS getestet (Stand Mai 2021).
+In allen Projekten wird ein Unity Packages eingesetzt, das wir als Release unter
+![Lizenzlogo](https://github.com/MBrill/VRKL/releases/tag/Sommersemester21-Final)
+finden.
 
 In den C#-Klassen werden die folgenden, an die .NET Namenskonventionen angelehnte,
 Konventionen verwendet:

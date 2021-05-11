@@ -17,6 +17,7 @@ Hier eine Tabelle mit den Demos und den Themen, die behandelt werden:
 | PolyNormalsInspector | Eckenliste mit Normalenvektoren, die im Inspektor definiert werden können. |
 | -------- | ---------------- | ------------------ |
 
+Die Anwendungen wurden erstellt mit Unity 2020.3.7f1 LTS auf Win64.
 
 ![Lizenzlogo](https://licensebuttons.net/l/by-nc-sa/3.0/de/88x31.png)
 

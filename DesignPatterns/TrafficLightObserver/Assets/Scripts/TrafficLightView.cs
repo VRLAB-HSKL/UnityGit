@@ -51,6 +51,7 @@ public class TrafficLightView : Observer
     /// <summary>
     /// Sollen die Zustandsklassen eine Ausgabe auf der Konsole durchführen?
     /// </summary>
+    [Tooltip("Log Ausgaben?")]
     public bool LogOutput = false;
 
     /// <summary>

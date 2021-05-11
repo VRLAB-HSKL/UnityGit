@@ -24,7 +24,7 @@ public abstract class TrafficState : VRKL.MBU.State
     protected TrafficState() { }
 
     /// <summary>
-    /// Die Klasse selbst verwenden dieses Enum für das Wechseln der
+    /// Die Klasse selbst verwendet dieses Enum für das Wechseln der
     /// Zustände nicht. 
     /// Der Wert wird ausschließlich verwendet, um für
     /// Anfragen von außen den Zustand zu definieren.

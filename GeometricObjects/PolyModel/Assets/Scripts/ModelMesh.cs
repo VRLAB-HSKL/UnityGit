@@ -83,7 +83,10 @@ public class ModelMesh : MonoBehaviour
         CreateTriangle();
 
         Saved = false;
-        Debug.Log("Save the triangle using KeyCode S!");
+        // Save funktioniert nur im Editor, da in der Runtime die AssetDataBase nicht verfügbar ist!
+#if UNITY_EDITOR
+        Debug.Log("Abspeichern des polygonalen Netzes mit der Taste S");
+#endif
     }	
 
     /// <summary>
@@ -91,7 +94,7 @@ public class ModelMesh : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.S))
+        if (Input.GetKeyUp(KeyCode.S) && Application.isEditor)
         {
             SaveTriangle();
         }
@@ -148,24 +151,37 @@ public class ModelMesh : MonoBehaviour
     /// </summary>
     protected virtual void SaveTriangle()
     {
+#if UNITY_EDITOR
         string folder = "Assets/Meshes";
+        string ret;
+
 
         if (!Saved)
         {
+
             if (AssetDatabase.IsValidFolder(folder))
             {
                 string name = folder + "/" + Random.Range(1, int.MaxValue).ToString() + ".asset";
-                AssetDatabase.CreateAsset(this.objMeshFilter.sharedMesh, name);
-                Debug.Log("Netz in der Datei " + name + " abgespeichert!");
+                Mesh mesh = this.objMeshFilter.sharedMesh;
+                AssetDatabase.CreateAsset(mesh, name);
+                if (AssetDatabase.Contains(mesh))
+                    Debug.Log("Netz in der Datei " + name + " abgespeichert!");
                 Saved = true;
             }
             else
-                Debug.LogError("Das verwendete Verzeichnis für das Abspeichern von Assets ist ungültig!");
+            {
+                ret = AssetDatabase.CreateFolder("Assets", "Meshes");
+                if (AssetDatabase.GUIDToAssetPath(ret) != "")
+                    Debug.Log("Verzeichnis Meshes erzeugt!");
+                else
+                    Debug.Log("Erzeugen des Verzeichnises Meshes: GUID nicht gefunden");
+            }
         }
         else
         {
             Debug.Log("Das Netz wurde bereits abgespeichert!");
         }
+#endif
     }
 
 }
