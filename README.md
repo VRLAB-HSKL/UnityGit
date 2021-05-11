@@ -3,9 +3,8 @@ Hier finden Sie Beispiele von Unity-Anwendungen für den Desktop und Android.
 Beispiele für VR-Anwendungen mit Unity finden Sie im Repository VRDemos!
 
 Alle Anwendungen wurden mit der Version Unity 2010.3.7f1 LTS getestet (Stand Mai 2021).
-In allen Projekten wird ein Unity Packages eingesetzt, das wir als Release unter
-![MBU-Package](https://github.com/MBrill/VRKL/releases/tag/Sommersemester21-Final)
-finden.
+In allen Projekten wird ein Unity Packages eingesetzt, das wir hier finden:
+[Release MBU-Package](https://github.com/MBrill/VRKL/releases/tag/Sommersemester21-Final).
 
 In den C#-Klassen werden die folgenden, an die .NET Namenskonventionen angelehnte,
 Konventionen verwendet:
