@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using VRKL.MBU;
 
 /// <summary>
 /// Ein einfaches polygonales Netz erzeugen
@@ -22,17 +23,9 @@ using System.Collections;
 /// Wir stellen mit RequireComponent sicher, dass wir ein MeshFilter
 /// und MeshRenderer haben.
 /// </summary>
-[RequireComponent(typeof(MeshFilter))]
-[RequireComponent(typeof(MeshRenderer))]
-[ExecuteInEditMode]
-public class SimpleMesh : MonoBehaviour {
 
-    /// <summary>
-    /// Wir erzeugen eine Material-Komponente,
-    /// so dass wir im Editor dem Netz ein Material zuweisen können.
-    /// </summary>
-    public Material meshMaterial;
-
+public class SimpleMesh : PolyMesh 
+{
     /// <summary>
     /// Feld für die Geometrie des polygonalen Netzes
     /// </summary>
@@ -56,22 +49,10 @@ public class SimpleMesh : MonoBehaviour {
     private MeshRenderer objRenderer;
 
     /// <summary>
-    /// Das Dreieck erzeugen
-    /// </summary>
-    private void Start () 
-	{
-        // Dem leeren GameObject, dem wir dieses Skript zuweisen fügen
-        // wir eine MeshFilter-Komponente und auch einen MeshRenderer hinzu
-        this.objMeshFilter = gameObject.GetComponent<MeshFilter>();
-        this.objRenderer = gameObject.GetComponent<MeshRenderer>();
-        CreateTriangle();
-	}
-
-    /// <summary>
     /// Wir speichern die Geometrie und die Topologie des Dreiecks ab
     /// und legen die Daten in eine Instanz der Klaasse Mesh.
     /// </summary>
-    private void CreateTriangle()
+    protected override void Create()
     {
         // Wir stellen ein Dreieck dar.
         vertices = new Vector3[3];
@@ -80,7 +61,7 @@ public class SimpleMesh : MonoBehaviour {
         vertices[2] = new Vector3(0.0f, 0.0f, 2.0f);
 
         // Die Einträge in der Topologie beziehen sich auf 
-        // die Indizes der Eckpunkte..
+        // die Indizes der Eckpunkte.
         // Die Durchlaufrichtung der Indices ist wichtig, da sonst
         // bei Backface Culling die Dreiecke nicht dargestellt werden.
         // Unity definiert ein Frontface als ein Polygon, das 
@@ -91,17 +72,27 @@ public class SimpleMesh : MonoBehaviour {
         topology[1] = 1;
         topology[2] = 2;
 
+        Material[] materials = new Material[1];
+
         // Polygonales Netz erzeugen, Geometrie und Topologie zuweisen
-        simpleMesh = new Mesh();
-        simpleMesh.vertices = vertices;
-        simpleMesh.triangles = topology;
+        Mesh simpleMesh = new Mesh()
+        {
+            vertices = vertices,
+            subMeshCount = 1,
+            triangles = topology
+        };
+
+        // Wir nutzen nicht aus, dass wir pro Submesh ein eigenes
+        // Material verwenden.
+        materials[0] = meshMaterial;
 
         // Unity die Normalenvektoren und die Bounding-Box berechnen lassen.
         simpleMesh.RecalculateNormals();
         simpleMesh.RecalculateBounds();
+        simpleMesh.OptimizeIndexBuffers();
 
         // Zuweisungen für die erzeugten Komponenten
         this.objMeshFilter.mesh = simpleMesh;
-        this.objRenderer.material = meshMaterial;
+        this.objectRenderer.materials = materials;
     }
 }
